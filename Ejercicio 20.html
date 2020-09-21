@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <script>
+        let min = parseInt(window.prompt("Escribe una cantidad de minutos"));
+        let horas = min / 60;
+        let dias = horas / 24;
+        let years = dias / 365;
+        let diasRes = dias % 365;
+        diasRes = parseInt(diasRes);
+        years = parseInt(years);
+        console.log("Su cifra es " + years + " años, " + diasRes + " días.");
+
+    </script>
+</body>
+
+</html>

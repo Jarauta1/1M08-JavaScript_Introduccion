@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+
+<body>
+    <script>
+        let metros = parseFloat(window.prompt("Escriba una distancia en metros"));
+        let horas = parseFloat(window.prompt("Escriba las horas que le costó recorrerlos"));
+        let minutos = parseFloat(window.prompt("Escriba los minutos que le costó recorrerlos"));
+        let segundos = parseFloat(window.prompt("Escriba los segundos que le costó recorrerlos"));
+        let segundosMin = minutos * 60;
+        let minHoras = minutos * 60;
+        let segundosHoras = minHoras * 60;
+        let segundosTotal = segundos + segundosMin + segundosHoras;
+        let velocidadMetrosSegundo = metros / segundosTotal;
+        let velocidadKmHora = velocidadMetrosSegundo * 0.06;
+        console.log("Ibas a " + velocidadMetrosSegundo + " metros/segundo");
+        console.log("Ibas a " + velocidadKmHora + " km/hora");
+    </script>
+</body>
+
+</html>
